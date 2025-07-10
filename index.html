@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UnmaskFiles</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background-color: #D7CEC7;
+      color: #333;
+      font-family: 'Inter', sans-serif;
+      line-height: 1.6;
+    }
+    header {
+      text-align: center;
+      padding: 100px 20px 60px;
+      background-color: #F3F1EF;
+      border-bottom: 1px solid #C4BCB6;
+      animation: fadeInDown 1s ease-in-out;
+    }
+    header h1 {
+      font-size: 3.5rem;
+      color: #76323F;
+      font-family: 'Playfair Display', serif;
+      letter-spacing: 1.5px;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.3rem;
+      color: #565656;
+      font-style: italic;
+      animation: fadeIn 2s ease-in-out;
+    }
+    .buttons {
+      margin-top: 40px;
+      animation: fadeInUp 1.5s ease-in-out;
+    }
+    .buttons a {
+      text-decoration: none;
+      color: #fff;
+      background-color: #76323F;
+      padding: 14px 30px;
+      margin: 0 12px;
+      border-radius: 30px;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+    }
+    .buttons a:hover {
+      background-color: #C09F80;
+      color: #111;
+    }
+    section.features {
+      padding: 80px 20px;
+      background-color: #EFECE9;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      text-align: center;
+      animation: fadeIn 2s ease-in-out;
+    }
+    .feature-card {
+      background: #fff;
+      border: 1px solid #DDD;
+      border-radius: 12px;
+      padding: 30px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .feature-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+    .feature-card h3 {
+      font-size: 1.5rem;
+      color: #76323F;
+      margin-bottom: 10px;
+      font-family: 'Playfair Display', serif;
+    }
+    .feature-card p {
+      font-size: 1rem;
+      color: #555;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.95rem;
+      color: #555;
+      margin-top: 100px;
+      padding: 30px;
+      border-top: 1px solid #C4BCB6;
+      background-color: #F3F1EF;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>One File Can Start a Revolution.</h1>
+    <p>Exposing hidden truths. No faces. Just files.</p>
+    <div class="buttons">
+      <a href="#">Explore Files</a>
+      <a href="#">Submit Tip</a>
+    </div>
+  </header>
+
+  <section class="features">
+    <div class="feature-card">
+      <h3>Verified Leaks</h3>
+      <p>All documents are double-verified for authenticity before being published.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Secure Whistleblowing</h3>
+      <p>Stay anonymous and report wrongdoings safely and confidentially.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Independent Media</h3>
+      <p>No corporate influence. No government pressure. Just facts.</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 UnmaskFiles. Truth has no owner.
+  </footer>
+</body>
+</html>
